@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "reirecipehistory",
+  "version": "${version}",
+  "name": "REI Recipe History",
+  "description": "Adds browsing history to Roughly Enough Items. Tracks viewed recipes and displays them in a panel at the bottom of the item list.",
+  "authors": [
+    "mcrib884"
+  ],
+  "contact": {
+    "homepage": "https://github.com/mcrib884/rei-recipe-history",
+    "sources": "https://github.com/mcrib884/rei-recipe-history",
+    "issues": "https://github.com/mcrib884/rei-recipe-history/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/reirecipehistory/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.reirecipehistory.fabric.ReiRecipeHistoryFabric"
+    ],
+    "client": [
+      "net.reirecipehistory.fabric.ReiRecipeHistoryFabricClient"
+    ],
+    "rei_client": [
+      "net.reirecipehistory.fabric.ReiRecipeHistoryPlugin"
+    ]
+  },
+  "mixins": [
+    "reirecipehistory.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": ">=1.19.2",
+    "roughlyenoughitems": ">=9.0.0"
+  },
+  "suggests": {
+    "architectury": "*"
+  }
+}

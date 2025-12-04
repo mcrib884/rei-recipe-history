@@ -1,0 +1,17 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "net.reirecipehistory.fabric.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [],
+    "client": [
+        "ClientHelperImplMixin",
+        "EntryListWidgetAccessor",
+        "EntryListWidgetMixin",
+        "EntryWidgetMixin",
+        "ScreenOverlayImplMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
